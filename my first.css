@@ -1,0 +1,122 @@
+
+  :root{
+    --bg:#2a5968;
+    --card:#44199a;
+    --muted:#9aa3ad;
+    --accent-grad-start:#747479;
+    --accent-grad-end:#b1afb5;
+  }
+
+  body{
+    margin:0;
+    height:100vh;
+    background:#00272e;
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(255, 255, 255);
+    padding:20px;
+  }
+
+  .card{
+    width:420px;
+    background:rgb(0, 1, 4);
+    border-radius:22px;
+    padding:20px;
+    border:1px solid rgba(93, 31, 31, 0);
+    box-shadow:0 10px 40px rgba(0,0,0,0.6);
+  }
+
+  .header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
+  }
+
+  .avatar{
+    width:60px;
+    height:60px;
+    background:linear-gradient(135deg, var(--accent-grad-start), var(--accent-grad-end));
+    border-radius:16px;
+    font-size:26px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+  }
+
+  .name{
+    font-size:22px;
+    font-weight:700;
+    
+  }
+
+  .subtitle{
+    font-size:13px;
+    color:var(--muted);
+    margin-top:4px;
+    line-height:1.4;
+  }
+
+  .list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:10px;
+  }
+
+  .item{
+    background:rgba(1, 1, 7, 0.03);
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:16px;
+    padding:14px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  .item-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:rgba(104, 112, 128, 0.509);
+  }
+
+  .icon-wrap{
+    width:46px;
+    height:46px;
+    background:rgba(22, 30, 32, 0.765);
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .meta .title{
+    font-size:16px;
+    font-weight:600;
+  }
+
+  .meta .handle{
+    font-size:13px;
+    color:var(--muted);
+  }
+
+  .copy-btn{
+    padding:8px 14px;
+    border-radius:14px;
+    background:transparent;
+    color:rgb(97, 116, 122);
+    border:1px solid rgba(255,255,255,0.1);
+    cursor:pointer;
+    font-weight:600;
+    font-size:13px;
+  }
+
+  .copy-btn.copied{
+    background:rgba(255,255,255,0.1);
+    border-color:#6a5df6;
+  }
